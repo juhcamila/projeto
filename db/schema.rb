@@ -13,17 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20180627172817) do
 
-  create_table "addredsses", force: :cascade do |t|
-    t.string   "street"
-    t.string   "city"
-    t.string   "state"
-    t.integer  "contact_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "addredsses", ["contact_id"], name: "index_addredsses_on_contact_id"
-
   create_table "addresses", force: :cascade do |t|
     t.string   "street"
     t.string   "city"
